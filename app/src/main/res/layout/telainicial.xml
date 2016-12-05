@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pedra"
+        android:id="@+id/pedra"
+        android:onClick="pedra"
+        android:background="@android:color/holo_blue_bright" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="papel"
+        android:id="@+id/papel"
+        android:onClick="papel"
+        android:background="@android:color/holo_blue_dark" />
+
+    <Button
+        android:src="@drawable/pedra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tesoura"
+        android:id="@+id/tesoura"
+        android:onClick="tesoura"
+        android:background="@android:color/holo_blue_bright" />
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/pedra"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/jogador"
+        />
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/pedra"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/computador"
+        />
+
+    <TextView
+        android:text="0"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/placarjogador"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/holo_red_light" />
+
+    <TextView
+        android:text="X"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:text="0"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/placarcomputador"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/holo_green_light" />
+</LinearLayout>
